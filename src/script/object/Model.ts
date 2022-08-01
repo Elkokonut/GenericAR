@@ -4,6 +4,7 @@ import Vector3 from "./Vector3";
 
 export default class Model {
     modelName: string;
+    iosSrc?: string;
     hotspots: Hotspot[];
     environment?: string;
     skybox: boolean;
@@ -47,6 +48,12 @@ export default class Model {
         // Enable AR
         mv.setAttribute('ar', '');
         mv.setAttribute('ar-modes', 'webxr scene-viewer quick-look');
+
+        // AR for iOS
+        mv.setAttribute('quick-look-browsers', 'safari, chrome')
+        if (this.iosSrc) {
+            mv.setAttribute('ios-src', this.iosSrc);
+        }
 
         // Camera Controls
         mv.setAttribute('camera-controls', '');

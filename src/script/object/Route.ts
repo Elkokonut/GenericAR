@@ -30,10 +30,6 @@ export default class Route {
     }
 
     static getPathname() {
-        const url = window.location.pathname.split('/');
-        if (url && url.length > 1)
-            return url[url.length - 1];
-        else
-            return null;
+        return window.location.pathname.split('/').pop();
     }
 }

@@ -11,6 +11,12 @@ function validateModelFile(modelName: string) {
     return autorizedExtensions.includes(fileExtension(modelName));
 }
 
+function validateIosSrc(iosSrc: string) {
+    const autorizedExtensions = ["usdz"];
+    return !iosSrc ||
+        autorizedExtensions.includes(fileExtension(iosSrc));
+}
+
 function validateEnvironment(environment: string) {
     const autorizedExtensions = ["hdr"]
     return !environment
@@ -25,6 +31,7 @@ function validatePoster(poster: string[]) {
 
 function validateData(data: any): data is modelType {
     return validateModelFile(data.modelName)
+        && validateIosSrc(data.iosSrc)
         && validateEnvironment(data.environment)
         && validatePoster(data.posters)
 }

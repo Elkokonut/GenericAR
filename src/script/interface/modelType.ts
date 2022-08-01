@@ -1,5 +1,6 @@
 export interface modelType {
     modelName: string;
+    iosSrc?: string;
     environment?: string;
     skybox?: string;
     poster?: string;
