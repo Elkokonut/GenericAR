@@ -41,7 +41,9 @@ To see your personnalized json just put your json in GenericAR/static/json/MYJSO
     http://localhost:1234/?name=MYJSON
     http://localhost:1234/MYJSON
     ```
+
 By default:
+
     ```bash
     http://localhost:1234
     http://localhost:1234/?name=cargo
