@@ -1,7 +1,7 @@
 # GenericAR
 AR on the web with annotations using webXR and Model-Viewer.
 
-This project have been carried out during my intership at [OCTO Technology](https://www.octo.com/).
+This project has been carried out during my intership at [OCTO Technology](https://www.octo.com/).
 
 ## 🔑&nbsp; Prerequisites
 
@@ -29,20 +29,23 @@ This project have been carried out during my intership at [OCTO Technology](http
 
 ## 🧑🏻‍💻&nbsp; Working
 
+1. Start server
+
     ```bash
     yarn parcel index.html
     ```
 
 The website in then available on http://localhost:1234.
 
-To see your personnalized json just put your json in GenericAR/static/json/MYJSON.json and go as :
+
+2. To see your personnalized json just put your json in GenericAR/static/json/MYJSON.json and go as :
 
     ```bash
     http://localhost:1234/?name=MYJSON
     http://localhost:1234/MYJSON
     ```
 
-By default:
+- By default:
 
     ```bash
     http://localhost:1234
@@ -52,6 +55,8 @@ By default:
     ```
 
 ## 🧑🏻‍💻&nbsp; Build for deployment
+
+- To build:
 
     ```bash
     yarn parcel build src/index.html
