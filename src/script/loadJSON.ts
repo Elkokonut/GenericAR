@@ -1,5 +1,6 @@
-import * as data from "../../static/cargo/cargo.json";
+
 import { instanceOfModelType, modelType } from "./interface/modelType";
+import * as jsons from "../../static/json/*.json";
 
 function fileExtension(filename) {
     return filename.split('.').pop();
@@ -28,8 +29,10 @@ function validateData(data: any): data is modelType {
         && validatePoster(data.posters)
 }
 
-export default function loadJSON(): modelType {
-    if (instanceOfModelType(data) && validateData(data))
+
+export default function loadJSON(id): modelType {
+    const data = jsons[id];
+    if (data && instanceOfModelType(data) && validateData(data))
         return data;
     return null;
 }
