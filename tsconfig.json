@@ -10,7 +10,8 @@
         "ES2017",
         "dom",
         "dom.iterable"
-    ]
+    ],
+    "module": "ES2022"
     },
     "include": ["./src/**/*"],
     "typeRoots": ["src/types/global.d.ts"],
