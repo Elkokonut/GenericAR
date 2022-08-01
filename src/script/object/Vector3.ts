@@ -40,7 +40,11 @@ export default class Vector3 {
         return this;
     }
 
-    toString() {
+    toStringDim() {
         return `${this.x}m ${this.y}m ${this.z}m`
+    }
+
+    toStringAngle() {
+        return `${this.x}deg ${this.y}deg ${this.z}m`
     }
 }

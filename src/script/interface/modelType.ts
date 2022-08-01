@@ -6,9 +6,8 @@ export interface modelType {
     poster?: string;
     arIcon?: string;
     arPrompt?: string;
-    targets?: {
+    hotspots?: {
         label?: string;
-        type?: string,
         position:
         {
             x: number;
@@ -16,6 +15,18 @@ export interface modelType {
             z: number;
         };
         normal?:
+        {
+            x: number;
+            y: number;
+            z: number;
+        };
+        orbit?:
+        {
+            x: number;
+            y: number;
+            z: number;
+        };
+        target?:
         {
             x: number;
             y: number;

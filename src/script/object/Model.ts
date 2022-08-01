@@ -19,12 +19,13 @@ export default class Model {
     constructor(json: modelType) {
         this.modelName = json.modelName;
         this.hotspots = [];
-        json.targets.forEach(target => {
+        json.hotspots.forEach(target => {
             this.hotspots.push(new Hotspot(
                 Vector3.fromJSON(target.position),
                 target.normal ? Vector3.fromJSON(target.normal) : null,
+                target.orbit ? Vector3.fromJSON(target.orbit) : null,
+                target.target ? Vector3.fromJSON(target.target) : null,
                 target.label,
-                target.type,
                 target.content
             ))
         });

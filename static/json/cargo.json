@@ -3,10 +3,9 @@
     "environment": "cargo/aircraft_workshop_01_1k.hdr",
     "skybox": "true",
     "poster": "cargo/poster.webp",
-    "targets": [
+    "hotspots": [
         {
             "label": "Hélice",
-            "type": "content",
             "position": {
                 "x": -0.42,
                 "y": -0.10,
@@ -21,7 +20,6 @@
         },
         {
             "label": "Conteneurs",
-            "type": "content",
             "position": {
                 "x": 0,
                 "y": 0.11,
@@ -30,7 +28,6 @@
             "content": "Les conteneurs permettent de transporter de la marchandise. \n Ils peuvent contenir plusieurs tonnes de marchandise. \n C'est le moyen le plus répandu pour transporter de grosses quantités sur de longues distances."
         },
         {
-            "type": "content",
             "position": {
                 "x": 0.1,
                 "y": -0.07,
@@ -41,7 +38,12 @@
                 "y": 0,
                 "z": 1
             },
-            "content": "<div>La coque permet au bateau de ne pas couler</div>"
+            "orbit": {
+                "x": -0,
+                "y": 100,
+                "z": 0
+            },
+            "content": "La coque permet au bateau de ne pas couler"
         }
     ]
 }
