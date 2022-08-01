@@ -1,8 +1,8 @@
 {
-    "modelName": "cargo/ressources/cargo ship.glb",
-    "environment": "cargo/ressources/aircraft_workshop_01_1k.hdr",
+    "modelName": "cargo/cargo ship.glb",
+    "environment": "cargo/aircraft_workshop_01_1k.hdr",
     "skybox": "true",
-    "poster": "cargo/ressources/poster.webp",
+    "poster": "cargo/poster.webp",
     "targets": [
         {
             "label": "Hélice",
