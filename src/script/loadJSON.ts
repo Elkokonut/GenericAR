@@ -1,4 +1,4 @@
-import * as data from "../static/cargo/cargo.json";
+import * as data from "../../static/cargo/cargo.json";
 import { instanceOfModelType, modelType } from "./interface/modelType";
 
 function fileExtension(filename) {
