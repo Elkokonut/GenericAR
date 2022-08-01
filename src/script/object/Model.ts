@@ -105,7 +105,7 @@ export default class Model {
     }
 
     private ARPrompt() {
-        const src = this.arPrompt ? this.arPrompt : `${globalThis.defaultRessourcesPath}/ar_hand_prompt.png"`;
+        const src = this.arPrompt ? this.arPrompt : `${globalThis.defaultRessourcesPath}/ar_hand_prompt.png`;
         const prompt = document.createElement('div');
         prompt.setAttribute('id', 'ar-prompt');
         const img = document.createElement('img');
