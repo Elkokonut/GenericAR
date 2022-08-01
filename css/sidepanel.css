@@ -1,0 +1,65 @@
+.sidepanel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 0vw;
+  background-color: #4baca3cc;
+  overflow-x: hidden;
+}
+
+
+.show {
+  padding: 40px;
+  width: 20vw;
+  transition: 1s;
+}
+
+.sidepanel a {
+  color: rgb(255, 255, 255);
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  display: block;
+  text-decoration: none;
+}
+
+.sidepanel a:hover {
+  color: #474747;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidepanel p {
+  color: rgb(255, 255, 255);
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  transition: 0s;
+}
+
+
+@media only screen and (max-width : 770px) {
+  .show {
+    padding-top: 70px;
+    width: 60vw;
+  }
+
+  .sidepanel p {
+    font-size: 22px;
+  }
+
+  .app {
+    width: 100vw;
+    height: 90vh;
+  }
+}

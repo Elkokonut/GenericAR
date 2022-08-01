@@ -1,0 +1,47 @@
+{
+    "modelName": "cargo/ressources/cargo ship.glb",
+    "environment": "cargo/ressources/aircraft_workshop_01_1k.hdr",
+    "skybox": "true",
+    "poster": "cargo/ressources/poster.webp",
+    "targets": [
+        {
+            "label": "Hélice",
+            "type": "content",
+            "position": {
+                "x": -0.42,
+                "y": -0.10,
+                "z": 0.46
+            },
+            "normal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "content": "Avec cette hélice, le bateau peut avancer."
+        },
+        {
+            "label": "Conteneurs",
+            "type": "content",
+            "position": {
+                "x": 0,
+                "y": 0.11,
+                "z": 0.45
+            },
+            "content": "Les conteneurs permettent de transporter de la marchandise. \n Ils peuvent contenir plusieurs tonnes de marchandise. \n C'est le moyen le plus répandu pour transporter de grosses quantités sur de longues distances."
+        },
+        {
+            "type": "content",
+            "position": {
+                "x": 0.1,
+                "y": -0.07,
+                "z": 0.48
+            },
+            "normal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "content": "<div>La coque permet au bateau de ne pas couler</div>"
+        }
+    ]
+}

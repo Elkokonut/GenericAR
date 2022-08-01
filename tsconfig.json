@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "outDir": "./built",
+      "allowJs": true,
+      "target": "es6",
+      "noEmitOnError": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "lib": [
+        "ES2017",
+        "dom",
+        "dom.iterable"
+    ]
+    },
+    "include": ["./src/**/*"],
+    "typeRoots": ["src/types/global.d.ts"],
+  
+  }
