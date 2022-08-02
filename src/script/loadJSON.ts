@@ -18,7 +18,7 @@ function validateIosSrc(iosSrc: string) {
 }
 
 function validateEnvironment(environment: string) {
-    const autorizedExtensions = ["hdr"]
+    const autorizedExtensions = ["hdr", "jpg", "jpeg"]
     return !environment
         || environment == "neutral"
         || autorizedExtensions.includes(fileExtension(environment));

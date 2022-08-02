@@ -54,6 +54,14 @@ The website in then available on http://localhost:1234.
     http://localhost:1234/cargo?id=whatever
     ```
 
+## 🧑🏻‍💻&nbsp; Filesystem
+
+If your path is local, put your model in static directory and use static as the base of your path. See [Parcel reporter static filescopy](https://www.npmjs.com/package/parcel-reporter-static-files-copy).
+
+1. Create static directory in your project root
+2. Fill it with your static files
+3. Refer to your statics files as if static was the root of your project
+
 ## 🧑🏻‍💻&nbsp; Build for deployment
 
 - To build:
