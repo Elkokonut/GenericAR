@@ -32,7 +32,7 @@ This project has been carried out during my intership at [OCTO Technology](https
 1. Start server
 
     ```bash
-    yarn parcel index.html
+    yarn parcel src/index.html
     ```
 
 The website in then available on http://localhost:1234.
