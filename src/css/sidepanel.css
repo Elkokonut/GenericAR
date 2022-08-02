@@ -15,6 +15,7 @@
   padding: 40px;
   width: 20vw;
   transition: 1s;
+  padding-top: 9vh;
 }
 
 .sidepanel a {
@@ -33,9 +34,23 @@
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 4vw;
   font-size: 36px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+}
+
+.sidepanel .leftarrow {
+  position: absolute;
+  top: 5vh;
+  left: 7vw;
+  font-size: 40px;
+}
+
+.sidepanel .rightarrow {
+  position: absolute;
+  top: 5vh;
+  right: 7vw;
+  font-size: 40px;
 }
 
 .sidepanel p {
@@ -62,4 +77,16 @@
     width: 100vw;
     height: 90vh;
   }
+
+  .sidepanel .leftarrow {
+    left: 25vw;
+    font-size: 40px;
+  }
+
+  .sidepanel .rightarrow {
+
+    right: 25vw;
+    font-size: 40px;
+  }
+
 }

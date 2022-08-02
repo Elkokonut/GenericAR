@@ -23,11 +23,51 @@ export default class Sidepanel {
         btn.innerText = "×"
         sidepanel?.appendChild(btn);
 
+        this.addArrows(sidepanel);
+
         const p = document.createElement('p');
         p.innerText = this.content;
         sidepanel?.appendChild(p);
 
         parent.appendChild(sidepanel);
+    }
+
+    addArrows(sidepanel) {
+        const right = document.createElement('a');
+        right.classList.add("rightarrow");
+        right.addEventListener("click", (event) => Sidepanel.Next(event));
+        right.href = "javascript: void(0)"
+        right.innerText = "→";
+        sidepanel?.appendChild(right);
+
+        if (this.slot != 0) {
+            const left = document.createElement('a');
+            left.classList.add("leftarrow");
+            left.addEventListener("click", (event) => Sidepanel.Prev(event));
+            left.href = "javascript: void(0)"
+            left.innerText = "←";
+            sidepanel?.appendChild(left);
+        }
+    }
+
+    static Next(event) {
+        event.stopPropagation();
+        const elmt = event.target as unknown as HTMLElement
+        const id = elmt?.parentElement?.getAttribute("id")?.split("-").pop();
+        const hotspot = document.querySelector(`button[slot="hotspot-${+id + 1}"]`);
+
+        if (hotspot)
+            hotspot.click();
+    }
+
+    static Prev(event) {
+        event.stopPropagation();
+        const elmt = event.target as unknown as HTMLElement
+        const id = elmt?.parentElement?.getAttribute("id")?.split("-").pop();
+        const hotspot = document.querySelector(`button[slot="hotspot-${+id - 1}"]`) as unknown as HTMLElement;
+
+        if (hotspot)
+            hotspot.click();
     }
 
     static hideAllSidepanels() {

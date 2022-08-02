@@ -16,6 +16,11 @@
                 "y": 0,
                 "z": 1
             },
+            "orbit": {
+                "x": 0,
+                "y": 90,
+                "z": 0
+            },
             "content": "Avec cette hélice, le bateau peut avancer."
         },
         {
@@ -24,6 +29,11 @@
                 "x": 0,
                 "y": 0.11,
                 "z": 0.45
+            },
+            "orbit": {
+                "x": 0,
+                "y": 90,
+                "z": 0
             },
             "content": "Les conteneurs permettent de transporter de la marchandise. \n Ils peuvent contenir plusieurs tonnes de marchandise. \n C'est le moyen le plus répandu pour transporter de grosses quantités sur de longues distances."
         },
