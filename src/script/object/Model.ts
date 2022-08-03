@@ -96,7 +96,7 @@ export default class Model {
         btn.innerText = text;
 
         btn.addEventListener("click", (event) => {
-            Sidepanel.showSidepanel("hotspot-0");
+            document.querySelector("button[slot='hotspot-0']")?.click();
         })
 
         return btn;
