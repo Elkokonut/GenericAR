@@ -17,7 +17,7 @@
                 "z": 1
             },
             "orbit": {
-                "x": 0,
+                "x": -90,
                 "y": 90,
                 "z": 0
             },
@@ -31,8 +31,8 @@
                 "z": 0.45
             },
             "orbit": {
-                "x": 0,
-                "y": 90,
+                "x": 20,
+                "y": 70,
                 "z": 0
             },
             "content": "Les conteneurs permettent de transporter de la marchandise. \n Ils peuvent contenir plusieurs tonnes de marchandise. \n C'est le moyen le plus répandu pour transporter de grosses quantités sur de longues distances."
@@ -49,9 +49,14 @@
                 "z": 1
             },
             "orbit": {
-                "x": -0,
+                "x": -20,
                 "y": 100,
                 "z": 0
+            },
+            "target": {
+                "x": -0.1,
+                "y": 0,
+                "z": 0.3
             },
             "content": "La coque permet au bateau de ne pas couler"
         }
