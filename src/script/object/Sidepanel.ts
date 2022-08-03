@@ -1,3 +1,5 @@
+import Hotspot from "./Hotspot";
+
 export default class Sidepanel {
     content: string;
     slot: number;
@@ -33,12 +35,14 @@ export default class Sidepanel {
     }
 
     addArrows(sidepanel) {
-        const right = document.createElement('a');
-        right.classList.add("rightarrow");
-        right.addEventListener("click", (event) => Sidepanel.Next(event));
-        right.href = "javascript: void(0)"
-        right.innerText = "→";
-        sidepanel?.appendChild(right);
+        if (this.slot != Hotspot.counter - 1) {
+            const right = document.createElement('a');
+            right.classList.add("rightarrow");
+            right.addEventListener("click", (event) => Sidepanel.Next(event));
+            right.href = "javascript: void(0)"
+            right.innerText = "→";
+            sidepanel?.appendChild(right);
+        }
 
         if (this.slot != 0) {
             const left = document.createElement('a');
