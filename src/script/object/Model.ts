@@ -1,5 +1,6 @@
 import { modelType } from "../interface/modelType";
 import Hotspot from "./Hotspot";
+import Sidepanel from "./Sidepanel";
 import Vector3 from "./Vector3";
 
 export default class Model {
@@ -79,11 +80,26 @@ export default class Model {
 
         const hotspots = this.getHotspots(mv);
         hotspots.forEach(hs => { mv.appendChild(hs) });
+        if (Hotspot.counter > 0)
+            mv.appendChild(this.JourneyButton("🚀 Start your journey!"))
         mv.appendChild(this.ARButton("View in your space"));
         mv.appendChild(this.ARPrompt());
         mv.appendChild(this.progressBar());
 
         return mv;
+    }
+
+    private JourneyButton(text: string) {
+        const btn = document.createElement('button');
+        btn.innerText = text;
+        btn.classList.add("circuit-button");
+        btn.innerText = text;
+
+        btn.addEventListener("click", (event) => {
+            Sidepanel.showSidepanel("hotspot-0");
+        })
+
+        return btn;
     }
 
 

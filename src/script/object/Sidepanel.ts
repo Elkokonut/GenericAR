@@ -82,6 +82,7 @@ export default class Sidepanel {
                 element.classList.remove("show");
             }
         });
+        document.querySelector(".circuit-button").classList.remove("hide");
         return sidepanels.length == 0;
     }
 
@@ -89,10 +90,12 @@ export default class Sidepanel {
         const panel = document.getElementById(`content-${id}`);
         const show = panel && !panel.classList.contains("show");
         const transition = Sidepanel.hideAllSidepanels();
+        const journeyBtn = document.querySelector(".circuit-button");
         if (show) {
             panel.classList.add("show");
             if (transition)
                 panel.classList.add("transition");
+            journeyBtn.classList.add("hide")
         }
     }
 }
