@@ -9,6 +9,12 @@ body {
   height: 100vh;
 }
 
+@media only screen and (max-width : 770px) {
+  body {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+
 model-viewer {
   width: 100%;
   height: 100%;
