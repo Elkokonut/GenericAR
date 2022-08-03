@@ -14,8 +14,11 @@
 .show {
   padding: 40px;
   width: 20vw;
-  transition: 1s;
   padding-top: 9vh;
+}
+
+.transition {
+  transition: 1s;
 }
 
 .sidepanel a {
@@ -36,7 +39,6 @@
   top: 0;
   right: 4vw;
   font-size: 36px;
-  /* margin-left: 50px; */
 }
 
 .sidepanel .leftarrow {

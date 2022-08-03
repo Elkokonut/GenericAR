@@ -78,17 +78,21 @@ export default class Sidepanel {
         const sidepanels = document.querySelectorAll('.show');
         Array.from(sidepanels).forEach(element => {
             if (element) {
+                element.classList.remove("transition");
                 element.classList.remove("show");
             }
         });
+        return sidepanels.length == 0;
     }
 
     static showSidepanel(id) {
         const panel = document.getElementById(`content-${id}`);
         const show = panel && !panel.classList.contains("show");
-        Sidepanel.hideAllSidepanels();
+        const transition = Sidepanel.hideAllSidepanels();
         if (show) {
             panel.classList.add("show");
+            if (transition)
+                panel.classList.add("transition");
         }
     }
 }
