@@ -43,6 +43,7 @@ export default class Hotspot {
                 const modelViewer = document.querySelector("model-viewer");
                 modelViewer.setAttribute("camera-target", (event.target as unknown as HTMLElement).getAttribute("data-target"));
                 modelViewer.setAttribute("camera-orbit", (event.target as unknown as HTMLElement).getAttribute("data-orbit"));
+                modelViewer.zoom(-100);
             });
         }
 
