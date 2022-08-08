@@ -5,7 +5,7 @@ This project has been carried out during my intership at [OCTO Technology](https
 
 ## 👁️&nbsp; Demo
 
-You can found the demo [here](https://elkokonut.github.io/GenericAR/index.html).
+The demo is [here](https://elkokonut.github.io/GenericAR/index.html).
 
 ## 🔑&nbsp; Prerequisites
 
