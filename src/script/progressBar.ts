@@ -4,6 +4,7 @@ const onProgress = (event) => {
   const updatingBar = event.target.querySelector('.update-bar');
   updatingBar.style.width = `${event.detail.totalProgress * 100}%`;
   if (event.detail.totalProgress === 1) {
+    document.querySelectorAll('.hide').forEach(elmt => elmt.classList.remove("hide"));
     progressBar.classList.add('hide');
   } else {
     progressBar.classList.remove('hide');

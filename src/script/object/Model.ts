@@ -93,6 +93,7 @@ export default class Model {
         const btn = document.createElement('button');
         btn.innerText = text;
         btn.classList.add("circuit-button");
+        btn.classList.add("hide");
         btn.innerText = text;
 
         btn.addEventListener("click", (event) => {
@@ -106,6 +107,7 @@ export default class Model {
     private ARButton(text: string) {
         const imgSrc = this.arIcon ? this.arIcon : `${globalThis.defaultRessourcesPath}/ar_icon.png`;
         const btn = document.createElement('button');
+        btn.classList.add("hide");
         btn.setAttribute('id', 'ar-button')
         btn.setAttribute('slot', 'ar-button')
         btn.setAttribute('style', `background-image: url(${imgSrc});`);

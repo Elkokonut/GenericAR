@@ -30,6 +30,7 @@ export default class Hotspot {
     toHTML(parent): HTMLElement {
         const btn = document.createElement('button');
         btn.classList.add('Hotspot');
+        btn.classList.add("hide");
         btn.setAttribute('slot', `hotspot-${this.slot}`)
         btn.setAttribute('data-position', this.position.toStringDim());
         if (this.normal)
