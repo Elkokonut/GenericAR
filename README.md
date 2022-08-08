@@ -3,6 +3,10 @@ AR on the web with annotations using webXR and Model-Viewer.
 
 This project has been carried out during my intership at [OCTO Technology](https://www.octo.com/).
 
+## 👁️&nbsp; Demo
+
+You can found the demo [here](https://elkokonut.github.io/GenericAR/index.html).
+
 ## 🔑&nbsp; Prerequisites
 
 - yarn v1.22.18
@@ -54,7 +58,7 @@ The website in then available on http://localhost:1234.
     http://localhost:1234/cargo?id=whatever
     ```
 
-## 🧑🏻‍💻&nbsp; Filesystem
+## 📁&nbsp; Filesystem
 
 If your path is local, put your model in static directory and use static as the base of your path. See [Parcel reporter static filescopy](https://www.npmjs.com/package/parcel-reporter-static-files-copy).
 
@@ -62,7 +66,7 @@ If your path is local, put your model in static directory and use static as the 
 2. Fill it with your static files
 3. Refer to your statics files as if static was the root of your project
 
-## 🧑🏻‍💻&nbsp; Build for deployment
+## 🏗️&nbsp; Build for deployment
 
 - To build:
 
@@ -71,3 +75,11 @@ If your path is local, put your model in static directory and use static as the 
     ```
 
     All builded code is located in dist.
+
+## 🙋🏻‍♂️&nbsp; Author
+
+- Marine Charra for Octo Technology
+
+## 📚&nbsp; License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
