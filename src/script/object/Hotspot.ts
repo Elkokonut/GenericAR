@@ -62,6 +62,13 @@ export default class Hotspot {
                 Sidepanel.showSidepanel(id);
             });
         }
+
+        if (this.content || this.orbit) {
+            btn.addEventListener('click', function stopInteractionPrompt(event) {
+                const modelViewer = document.querySelector("model-viewer");
+                modelViewer.setAttribute("interaction-prompt", "none");
+            });
+        }
         return btn;
     }
 }
