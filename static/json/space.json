@@ -1,0 +1,25 @@
+{
+    "modelName": "space/space.gltf",
+    "iosSrc": "space/space.usdz",
+    "hotspots": [
+        {
+            "label": "Soleil",
+            "position": {
+                "x": 0.2,
+                "y": 0,
+                "z": -5.6
+            },
+            "normal": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "orbit": {
+                "x": -90,
+                "y": 90,
+                "z": 0
+            },
+            "content": "Centre du système"
+        }
+    ]
+}
