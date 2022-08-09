@@ -1,6 +1,7 @@
 {
-    "modelName": "space/space.gltf",
+    "modelName": "https://raw.githubusercontent.com/Elkokonut/GenericAR/main/static/space/space.gltf",
     "iosSrc": "space/space.usdz",
+    "poster": "space/space.png",
     "hotspots": [
         {
             "label": "Soleil",
