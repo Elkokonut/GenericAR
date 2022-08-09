@@ -1,9 +1,9 @@
 {
-    "modelName": "cargo/cargo ship.glb",
-    "environment": "cargo/aircraft_workshop_01_1k.hdr",
-    "iosSrc": "cargo/Cargo_Ship.usdz",
+    "modelName": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/cargo/cargo ship.glb",
+    "environment": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/cargo/aircraft_workshop_01_1k.hdr",
+    "iosSrc": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/cargo/Cargo_Ship.usdz",
     "skybox": "true",
-    "poster": "cargo/poster.webp",
+    "poster": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/cargo/poster.webp",
     "hotspots": [
         {
             "label": "Hélice",

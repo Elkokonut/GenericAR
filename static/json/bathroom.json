@@ -1,6 +1,6 @@
 {
-    "modelName": "bathroom/bathroom.glb",
-    "iosSrc": "bathroom/bathroom.usdz",
-    "poster": "bathroom/bathroom.png",
+    "modelName": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/bathroom/bathroom.glb",
+    "iosSrc": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/bathroom/bathroom.usdz",
+    "poster": "https://raw.githubusercontent.com/Elkokonut/elkokonut.github.io/main/GenericAR/bathroom/bathroom.png",
     "environment": "neutral"
 }
