@@ -1,6 +1,7 @@
 {
     "modelName": "cargo/cargo ship.glb",
     "environment": "cargo/aircraft_workshop_01_1k.hdr",
+    "iosSrc": "cargo/Cargo_Ship.usdz",
     "skybox": "true",
     "poster": "cargo/poster.webp",
     "hotspots": [

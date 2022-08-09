@@ -33,6 +33,7 @@ export default class Model {
         this.poster = json.poster;
         this.arIcon = json.arIcon;
         this.arPrompt = json.arPrompt;
+        this.iosSrc = json.iosSrc;
         this.environment = json.environment;
         this.skybox = json.skybox == "true";
         this.animation = json.animation;
